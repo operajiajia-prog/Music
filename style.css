@@ -1,0 +1,131 @@
+body {
+    font-family: "Impact", "Arial Black", "Helvetica Neue", sans-serif; 
+    background-color: #050505;
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.hero-section {
+    background-color: #111111;
+    padding: 100px 20px;
+    text-align: center;
+    border-bottom: 8px solid #E50914;
+}
+
+.hero-section h1 {
+    margin: 0;
+    font-size: 80px; 
+    color: #ffffff;
+    letter-spacing: 5px;
+    text-shadow: 4px 4px 0px #E50914;
+}
+
+.hero-section p {
+    color: #888888;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+
+.main-container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 40px;
+    color: #ffffff;
+    border-left: 10px solid #E50914;
+    padding-left: 15px;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+.card-container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.impact-card {
+    background-color: #0a0a0a;
+    width: 31%;
+    border: 1px solid #333;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.impact-card:hover {
+    border-color: #E50914; 
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.4); 
+}
+
+.impact-pic {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(1);
+    transition: all 0.4s ease-in-out;
+}
+
+.artist-pic {
+    height: 460px;
+}
+
+.track-pic {
+    aspect-ratio: 1 / 1;
+}
+
+.impact-card:hover .impact-pic {
+    filter: grayscale(0);
+    transform: scale(1.05);
+}
+
+.impact-card h3 {
+    margin: 20px 20px 5px 20px;
+    font-size: 24px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.impact-card p {
+    margin: 0 20px 25px 20px;
+    font-size: 14px;
+    color: #aaaaaa;
+    letter-spacing: 2px;
+}
+
+.impact-card p.genre {
+    margin: 0 20px 15px 20px;
+}
+
+.card-divider {
+    width: 30px;
+    height: 3px;
+    background-color: #E50914;
+    margin: 0 20px 15px 20px;
+}
+
+.impact-card p.bio {
+    margin: 0 20px 25px 20px;
+    font-size: 13px;
+    color: #888888;
+    line-height: 1.6;
+    text-transform: none;
+    letter-spacing: 0.5px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.video-container {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.video-container iframe {
+    border-radius: 16px;
+    border: 1px solid #333;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
